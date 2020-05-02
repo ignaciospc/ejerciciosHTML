@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color:rgba(208, 208, 208,0.1 ) ;
+}
+.main-header{
+    text-align: center;
+}
+.main-header img{
+    border-radius: 50%;
+}
+.banner{
+    display: none;
+}
+
+
+div.menu{
+    background-color:rgba(89, 86, 85 , 1);
+    border: 1px solid white;    
+    padding: 10px;
+}
+
+.product{
+    margin-top: 35px;
+}
+
+span.fa {
+    color: white;
+}
+.main-nav ul{
+    list-style: none;
+}
+.main-nav li{
+    background-color:rgba(89, 86, 85, 1);
+    padding: 10px;
+    margin-top: 2px;
+}
+.main-nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white
+} 
+.photo{
+    width: 100%;
+}
+.special{
+    position: absolute;
+    top: 0;
+    right: 22px;
+}
+
+.photo-container{
+    position: relative;
+}
+a.zoom{
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    background-color: rgba(100,100,100,0.5);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    font-size: 35px;
+}
+p{
+    text-align: justify;
+    margin-bottom: 20px;
+    color: rgb(70, 70, 70 );
+}
+a.more{
+    text-decoration: none;
+    color:white;
+    background-color: rgba(89, 86, 85, 1);
+    padding: 4px;
+}
+
+footer{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(240, 17, 17 );
+}
+.main-footer ul li{
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid white;
+
+}
+.main-footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+@media(min-width:768px){
+   .banner{
+       display: block;
+   }
+   .banner img{
+       width: 100%;
+   }
+   
+   .menu{
+       display: none;
+   }
+   .main-nav ul{
+       display: grid;
+       grid-template-columns: auto auto auto auto auto auto;
+       grid-gap: 25px;
+       margin:15px 0px;
+    
+   }
+
+   
+   section{
+       display: grid;
+       grid-template-columns: 50% 50%;
+       grid-gap: 10px;
+   }
+
+}
+
+@media(min-width:1024px){
+    section{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+    }
+
+    
+}
+
+

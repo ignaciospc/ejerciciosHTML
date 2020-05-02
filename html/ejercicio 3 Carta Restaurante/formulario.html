@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Carta Restaurante/css/styleFormulario.css">
+    <title>Formulario | nuestro restó</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div>
+            <label for="zona" ><h1>¿De dónde sos?</h1></label>
+            <select name="zona" id="zona"> 
+                <option name="zona" value="nada" selected>selecciones una opcion</option>
+                <option name="zona" value="N">zona norte</option>
+                <option name="zona" value="S">zona sur</option>
+                <option name="zona" value="E">zona oeste</option>
+                <option name="zona" value="O">zona este</option>
+            </select>
+        </div>
+        <div>
+            <label for="iluminacion"><h1>¿Qué te parecio la iluminacion del ambiente?</h1></label>
+            <input type="checkbox" name="iluminacion">Mala <br>
+            <input type="checkbox" name="iluminacion" >Muy acorde <br>
+            <input type="checkbox" name="iluminacion">Buena, pero podria mejorar <br>
+        </div>
+        <div>
+            <label for="plato" ><h1>¿Qué tipo de plato fue el que mas te gusto?</h1></label>
+            <input type="checkbox" name="plato" checked> entrada <br>
+            <input type="checkbox" name="plato" > plato principal <br>
+            <input type="checkbox" name="plato" > poste <br>
+            <input type="checkbox" name="plato" > otros <br>
+        </div>
+        <div>
+            <label for="radio"><h1>¿recomendarias el lugar?</h1></label>
+            <input type="radio" name="recomendacion" value="si" checked> si
+            <input type="radio" name="recomendacion" value="no"> no
+        </div>
+        <div>
+            <label for="porque"><h1>¿Por qué?</h1></label><br>
+            <textarea name="porque" id="porque" placeholder="aaaaa" cols="90" rows="5" > </textarea>
+        </div>
+
+        <div>
+            <h2>dejanos tus datos y nos pondremos en contacto con vos</h2>
+            <label for="nombre"><h3>Nombre</h3></label>
+            <textarea name="nombre" id="nombre" cols="10" rows="1">tu nombre</textarea>
+            <label for="email"><h3>Email</h3></label>
+            <textarea type='email' name="email" id="email" cols="10" rows="1">tu email</textarea>
+        </div>
+
+        <div>
+            <button type="submit">ENVIAR</button>
+            <button type="reset">RESETEAR</button>
+        </div>
+        
+
+        
+    </section>
+    
+</body>
+</html>

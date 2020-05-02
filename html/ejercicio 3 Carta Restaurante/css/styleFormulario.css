@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+body{
+    margin: auto 5%;
+    background-color: whitesmoke;
+    border: 2px solid rgb(211, 211, 38 );
+}
+div{
+    padding: 15px 0px 15px 10px;
+
+}
+
+.a{
+    height: 40vh;
+    width: 100%;
+}
+select{
+    margin: -30px 0px;
+}
