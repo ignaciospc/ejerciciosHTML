@@ -5,6 +5,8 @@
 body{
     background-color:rgba(208, 208, 208,0.1 ) ;
 }
+
+
 .main-header{
     text-align: center;
 }
@@ -20,6 +22,7 @@ div.menu{
     background-color:rgba(89, 86, 85 , 1);
     border: 1px solid white;    
     padding: 10px;
+    
 }
 
 .product{
@@ -123,11 +126,38 @@ footer{
 }
 
 @media(min-width:1024px){
+    .container{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     section{
         display: grid;
         grid-template-columns: auto auto auto;
         grid-gap: 10px;
     }
+    footer{
+        border-radius: 25px 25px 0px 0px;
+    }
+
+    footer ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 70px;
+    }
+
+    .main-footer ul li{
+        font-size: 10px;
+        padding: 0px 7px;
+        margin: 1px;
+        border:none;
+        border-right: 2px  solid white;
+       
+        
+    }
+   
+    
 
     
 }
