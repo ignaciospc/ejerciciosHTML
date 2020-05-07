@@ -1,6 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    
+}
+.contenedor-web{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0px auto;
+    min-height: 100vh;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     background-color: #ebebeb;
@@ -8,6 +17,7 @@ body{
     
 header{
     background-color: #EAC926;
+    width: 100%;
 }
 .cabezeraA{
     display: flex;
@@ -246,6 +256,82 @@ body{
 }
 
  
+}
+
+@media(min-width:1024px){
+
+    /*header*/
+    
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .cabezeraA{
+        grid-column: span 4;
+        align-items: center;
+    }
+    .cabezeraB{
+        grid-column:  span 2;
+        align-items: center;
+        
+    }
+    .contenedor-texto{
+        margin: 0px;
+    }
+
+    .comentario-tarjeta{
+        padding-right: 0px;
+    }
+    .cabezera-ipad{
+        grid-column: span 6;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .menu1{
+        grid-column: span 2;
+    }
+    .menu2{
+        grid-column: 5 / 7;
+    }
+
+    /*section*/
+
+    section{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .banner{
+        grid-column: span 4;
+    }
+    
+    .contenedor-img{
+        grid-column: span 4;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .contenedor-img h2{
+        grid-column: span 4;
+    }
+
+    .contenedor-img  i{
+        font-size: 18px;
+        position: absolute;
+        bottom: 53px;
+        right: 13px;
+    }
+    
+
+    /*footer*/
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+       }
+
+       .copyrigth{
+        grid-column: span 3;
+       }
+    
+    
 }
 
  
